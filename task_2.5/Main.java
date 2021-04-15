@@ -4,7 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        System.out.println((a == 10) ? "Верно" : "Неверно");
     }
 }
