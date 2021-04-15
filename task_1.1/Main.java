@@ -15,6 +15,9 @@ name типа String, age типа int и city типа String.
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        String name = "Николай";
+        String city = "Москва";
+        int age = 38;
+        System.out.println("Привет мир я "+name+"из города"+city+"возрастом"+age);
     }
 }
