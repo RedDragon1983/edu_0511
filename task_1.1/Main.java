@@ -18,6 +18,6 @@ public class Main {
         String name = "Николай";
         String city = "Москва";
         int age = 38;
-        System.out.println("Привет мир я "+name+"из города"+city+"возрастом"+age);
+        //System.out.println("Привет мир я "+name+"из города"+city+"возрастом"+age);
     }
 }
