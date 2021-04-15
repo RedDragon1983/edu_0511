@@ -5,6 +5,13 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        int n = 31;
+        boolean t = true;
+        for(int i = 2; i < n; n++){
+            if(n%i != 0){
+                t = false;
+            }
+        }
+        System.out.println(t);
     }
 }
