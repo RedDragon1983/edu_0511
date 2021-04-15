@@ -7,6 +7,13 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-
+        String t;
+        for(int i = 1; i < 11; i++){
+            t="";
+            for(int j = 1; j < 11; j++){
+                t+=(i*j)+" ";
+            }
+            System.out.println(t);
+        }
     }
 }
