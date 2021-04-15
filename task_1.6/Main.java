@@ -4,6 +4,8 @@
 
 public class Main {
     public static void main(String[] args) {
-        // Ваш код
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        System.out.println(a * 1.15);
     }
 }
