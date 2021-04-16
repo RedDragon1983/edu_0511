@@ -16,12 +16,22 @@
 public class Main {
     public static int min(int a, int b, int c, int d) {
         //напишите тут ваш код
-
+        int t1 = min(a, b);
+        int t2 = min(c, d);
+        if(t1 < t2){
+            return t1;
+        }else {
+            return t2;
+        }
     }
 
     public static int min(int a, int b) {
         //напишите тут ваш код
-
+        if (a < b){
+            return a;
+        }else {
+            return b;
+        }
     }
 
     public static void main(String[] args) throws Exception {
