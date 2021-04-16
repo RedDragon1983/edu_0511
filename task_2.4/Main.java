@@ -8,7 +8,7 @@ public class Main {
         Double sum = s.nextDouble();
         Double p = s.nextDouble();
         Double proc = sum/100;
-        Double i = sum;
+        Double i = 0.0;
         for(int h = 0; h < 5; h++){
             i+= sum + (proc*p);
             System.out.println(i);
