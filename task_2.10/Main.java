@@ -5,13 +5,14 @@
 public class Main {
     public static void main(String[] args) {
         //напишите тут ваш код
-        int t = 0;
-        for(int i = 0; i < (args.length-1); i++){
-            if (args[i] == args[i+1]) {
-                t = 1;
+        int num[] = {4,8,7,2,6,4,2,6,2,2};
+        boolean t = false;
+        for(int i = 0; i < (num.length-1); i++){
+            if (num[i] == num[i+1]) {
+                t = true;
             }
         }
-        if(t == 1){
+        if(t){
             System.out.println("да");
         }else {
             System.out.println("нет");
