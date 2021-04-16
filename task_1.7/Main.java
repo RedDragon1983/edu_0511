@@ -15,6 +15,6 @@ public class Main {
         int a = s.nextInt();
         int b = s.nextInt();
         int c = s.nextInt();
-        System.out.println(a * b * c);
+        System.out.println(a * b * c * 1000);
     }
 }
