@@ -4,7 +4,16 @@
 
 public class Main {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        int[] ints = {2, 3, 4, 5, 6, 7, 8};
+        boolean five = false;
+        for (int i = 0; i < ints.length; i++){
+            if (ints[i] == 5)
+                five = true;
+        }
+        if (five) {
+            System.out.println("да");
+        } else {
+            System.out.println("нет");
+        }
     }
 }
