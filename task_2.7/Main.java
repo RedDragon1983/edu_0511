@@ -7,7 +7,7 @@ public class Main {
         //напишите тут ваш код
         int n = 31;
         boolean t = true;
-        for(int i = 2; i < n; n++){
+        for(int i = 2; i < n; i++){
             if(n%i != 0){
                 t = false;
             }
