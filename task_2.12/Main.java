@@ -15,25 +15,20 @@ public class Main {
         for (int i = 0; i < 10; i++){
             num[i] = s.nextInt();
         }
-        Map<Integer, Integer> map = new HashMap<>();
+        int max = 1;
+        int same = 1;
         int last = 0;
         for (int i = 0; i < num.length; i++){
-            if(num[i] == last){
-                if(map.containsKey(num[i])){
-                    map.put(num[i],map.get(num[i])+1);
-                }else {
-                    map.put(num[i],2);
+            if(last == num[i]){
+                same++;
+            }else {
+                if(same > max){
+                    max = same;
                 }
+                same = 1;
             }
             last = num[i];
         }
-        Iterator<Map.Entry<Integer, Integer>> entries = map.entrySet().iterator();
-        int t = 0;
-        while (entries.hasNext()) {
-            Map.Entry<Integer, Integer> entry = entries.next();
-            if(entry.getValue() > t)
-                t = entry.getValue();
-        }
-        System.out.println(t);
+        System.out.println(max);
     }
 }
