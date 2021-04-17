@@ -31,21 +31,9 @@ class Cat {
 
     public boolean fight(Cat anotherCat) {
         int count = 0;
-        if(this.age > anotherCat.age){
-            count++;
-        }else {
-            count--;
-        }
-        if(this.strength > anotherCat.strength){
-            count++;
-        }else {
-            count--;
-        }
-        if(this.weight > anotherCat.weight){
-            count++;
-        }else {
-            count--;
-        }
+        count+=(this.age > anotherCat.age) ? 1 : -1;
+        count+=(this.strength > anotherCat.strength) ? 1 : -1;
+        count+=(this.weight > anotherCat.weight) ? 1 : -1;
         return count > 0;
     }
 }
