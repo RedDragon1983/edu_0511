@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Cat cat = new Cat();
         cat.setName("Жужик");
-        System.out.println(cat.name);
+        //System.out.println(cat.name); // НЕТ ДОСТУПА К ПЕРЕМЕННОЙ БЕЗ ГЕТТЕРА
     }
 }
 
