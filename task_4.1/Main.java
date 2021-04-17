@@ -20,6 +20,6 @@ class Cat {
 
     public void setName(String name) {
         //напишите тут ваш код
-
+        this.name = name;
     }
 }
