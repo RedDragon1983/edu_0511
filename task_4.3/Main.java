@@ -30,6 +30,22 @@ class Cat {
     }
 
     public boolean fight(Cat anotherCat) {
-        //напишите тут ваш код
+        int count = 0;
+        if(this.age > anotherCat.age){
+            count++;
+        }else {
+            count--;
+        }
+        if(this.strength > anotherCat.strength){
+            count++;
+        }else {
+            count--;
+        }
+        if(this.weight > anotherCat.weight){
+            count++;
+        }else {
+            count--;
+        }
+        return count > 0;
     }
 }
