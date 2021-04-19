@@ -8,6 +8,25 @@
 
 public class Main{
     public static void main(String[] args) {
-      //Ваш код
+        //Ваш код
+        Horse horse = new Horse();
+        horse.run();
+        Pegasus pegasus = new Pegasus();
+        pegasus.fly();
+    }
+}
+abstract class Animal{
+    String name;
+    int height;
+    int tail;
+}
+class Horse extends Animal{
+    public void run(){
+        System.out.println("Игого, я поскакал");
+    }
+}
+class Pegasus extends Horse{
+    public void fly(){
+        System.out.println("Игого, я полетел");
     }
 }
