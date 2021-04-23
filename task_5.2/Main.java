@@ -13,8 +13,8 @@
 Абрамовичи */
 
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 /* 
@@ -24,23 +24,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        List<String> list = new ArrayList<>();
+        HashMap<String, String> hashMap = new HashMap<>();
         while (true) {
             String family = scanner.nextLine();
             if (family.isEmpty()) {
                 break;
             }
-
-            list.add(family);
+            hashMap.put(family, scanner.nextLine());
         }
-
-        // Read the house number
-        int houseNumber = scanner.nextInt();
-
-        if (0 <= houseNumber && houseNumber < list.size()) {
-            String familyName = list.get(houseNumber);
-            System.out.println(familyName);
+        String sity = scanner.nextLine();
+        for (Map.Entry<String, String> entry: hashMap.entrySet()) {
+            if(sity == entry.getKey())
+                System.out.println(entry.getValue());
         }
     }
 }
