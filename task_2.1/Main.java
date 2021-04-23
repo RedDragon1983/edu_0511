@@ -13,13 +13,21 @@
 •	Должны быть выведены все возможные комбинации. */
 
 public class Main {
-    public static void main(String[] args) {
-        //напишите тут ваш код
-        System.out.println("МылаРамуМама");
-        System.out.println("РамуМамаМыла");
-        System.out.println("МылаМамаРаму");
-        System.out.println("РамуМамаМыла");
-        System.out.println("МамаРамуМыла");
-        System.out.println("РамуМылаМама");
+    public static void main(String[] args) {   
+        String[] strings = {"Мама", "Мыла", "Раму"};
+        String out, out2 = "";
+        for (int i = 0; i < strings.length; i++){
+            out = strings[i];
+            for (int g = 0; g < strings.length; g++){
+                if(g != i){
+                    out2 = strings[g];
+                    for (int d = 0; d < strings.length; d++){
+                        if(d != i && d != g) {
+                            System.out.println(out+out2+strings[d]);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
