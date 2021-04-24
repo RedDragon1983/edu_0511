@@ -23,8 +23,8 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            //FileInputStream fin = new FileInputStream("C:\\java\\ip.txt");
-            FileInputStream fin = new FileInputStream("C:\\edu_0511_java\\ip.txt");
+            FileInputStream fin = new FileInputStream("C:\\java\\ip.txt");
+            //FileInputStream fin = new FileInputStream("C:\\edu_0511_java\\ip.txt");
 
             ArrayList<CheckProxy> arrayList = new ArrayList<>();
             ArrayList<Thread> arrayList2 = new ArrayList<>();
