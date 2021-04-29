@@ -10,19 +10,22 @@ import java.util.ArrayList;
 public class Server {
     public static void main(String[] args) {
         final ArrayList<User> users = new ArrayList<>();
+        int numbUser = 0; // уникальный счётчик пользователей
         try {
             ServerSocket serverSocket = new ServerSocket(8188);
             //ServerSocket serverSocket = new ServerSocket(8189);
             while (true){
                 final Socket socket = serverSocket.accept(); //Ожидаем клиента
                 System.out.println("Клиент подключился");
+                numbUser++;
+                final int numbUser2 = numbUser; // номер пользователя
                 Thread thread = new Thread(new Runnable() { // Создаёи поток для подключившегося клиента
                     @Override
                     public void run() {
                         try {
                             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
                             DataInputStream in = new DataInputStream(socket.getInputStream());
-                            out.writeUTF("Добро пожаловать на сервер! \nПредставьтесь пожалуйста.");
+                            out.writeUTF("Добро пожаловать на сервер! \nПредставьтесь пожалуйста. : "+numbUser2);
                             while (true){
                                 System.out.println("Ожидаем сообщение от пользователей");
                                 String request = in.readUTF(); // Ожидаем сообщение от клиента
